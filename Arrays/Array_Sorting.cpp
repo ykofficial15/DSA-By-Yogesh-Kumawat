@@ -21,7 +21,7 @@ for(int i=0;i<s;i++)
 {
     for(int j=i+1;j<s;j++)
     {
-        if(arr[i]<arr[j])   //you can change the sign to use > or < operations for sorting in the array
+        if(arr[i]<arr[j])   //fi you want to perfrom greater than operation you just change the sign to >
         {
             int temp=arr[j];
             arr[j]=arr[i];
