@@ -15,6 +15,6 @@ int main(){
  first->next=second;
  second->data=30;
  second->next=NULL;
- cout<<second->data<<endl;
+ cout<<second->data<<endl; //you can change the data name to print other values
  return 0;
 }
