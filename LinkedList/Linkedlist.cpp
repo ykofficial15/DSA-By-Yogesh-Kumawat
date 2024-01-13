@@ -4,7 +4,6 @@ struct node{
     int data;
     struct node *next;
 };
-
 int main(){
     struct node *head=(struct node*)malloc(sizeof(struct node));
     struct node *first=(struct node*)malloc(sizeof(struct node));
@@ -15,6 +14,6 @@ int main(){
  first->next=second;
  second->data=30;
  second->next=NULL;
- cout<<second->data<<endl; //you can change the data name to print other values
+ cout<<second->data<<endl;    // --------------------------------------------------------------------------- you can change the node name to print other values
  return 0;
 }
