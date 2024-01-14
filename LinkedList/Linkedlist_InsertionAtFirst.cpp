@@ -13,7 +13,7 @@ void traverse(struct node *ptr)
         ptr=ptr->next;
     }
 }
-struct node* insertbegin(struct node* ptr, int val)
+struct node* insertbegin(struct node* ptr, int val)   // this function is always used for insertion at the first end of the head node
 {
     struct node *newnode=(struct node*)malloc(sizeof(struct node));
     newnode->data=5;
