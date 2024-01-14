@@ -5,7 +5,7 @@ struct node{
     struct node *next;
 };
 
-void traverse(struct node *ptr)
+void traverse(struct node *ptr) //this function is used for linked list traversal
 {
     while(ptr!=NULL)
     {
