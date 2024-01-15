@@ -14,7 +14,8 @@ void traversal(struct node *ptr)               //this function is used for linke
     }
 }
 
-struct node* insertion(struct node *ptr,int val){
+struct node* insertion(struct node *ptr,int val)    //this function is used for linked list element insertion at the end
+{
     struct node* fourth=(struct node*)malloc(sizeof(struct node));
     struct node *head=ptr;
     fourth->data=val;
