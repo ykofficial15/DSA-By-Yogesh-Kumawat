@@ -13,7 +13,7 @@ void traversal(struct node *ptr){
     }
 }
 
-void searching(struct node *ptr,int key)
+void searching(struct node *ptr,int key)  //this function is used for searching a particular element in the linkedlist
 {
     int index=0;
     while(ptr!=NULL)
