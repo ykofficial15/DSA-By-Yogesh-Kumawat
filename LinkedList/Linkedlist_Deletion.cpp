@@ -13,7 +13,7 @@ void traversal(struct node *ptr){
     }
 }
 
-struct node *deletion(struct node *ptr,int index)
+struct node *deletion(struct node *ptr,int index) //this function is used to delete element from the linkedlist
 {
     struct node *p=ptr;
     struct node *q=ptr->next;
@@ -43,7 +43,7 @@ int main(){
     traversal(head);
     cout<<endl;
     cout<<"Linkedlist after deletion"<<endl;
-    head=deletion(head,2);
+    head=deletion(head,2);  //you can change the index value from here 
     traversal(head);
     return 0;
 }
