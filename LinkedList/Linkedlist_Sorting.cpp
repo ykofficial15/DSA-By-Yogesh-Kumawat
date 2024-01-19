@@ -13,7 +13,7 @@ void traversal(struct node *ptr) {
     }
 }
 
-int findLength(struct node *head) {
+int findLength(struct node *head) { //this function is used for finding length of the linkedlist
     int length = 0;
     struct node *current = head;
 
@@ -25,7 +25,7 @@ int findLength(struct node *head) {
     return length;
 }
 
-void bubbleSort(struct node *head) {
+void bubbleSort(struct node *head) {  //here i have used bubble sort to sort the linkedlist elements
     int length = findLength(head);
 
     for (int i = 0; i < length - 1; i++) {
