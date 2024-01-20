@@ -32,7 +32,7 @@ int main(){
     struct node *head=(struct node*)malloc(sizeof(struct node));
     struct node *first=(struct node*)malloc(sizeof(struct node));
     struct node *second=(struct node*)malloc(sizeof(struct node));
-
+ // connection of data nodes
     head->data=10;
     head->next=first;
     first->data=20;
