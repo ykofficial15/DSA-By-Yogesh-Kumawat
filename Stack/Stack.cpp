@@ -7,6 +7,4 @@ struct node{
 
 int main(){
     struct node *top=NULL;
-    
-
 }
