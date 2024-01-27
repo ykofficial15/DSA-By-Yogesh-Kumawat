@@ -10,7 +10,6 @@ int isEmpty(struct node *ptr)
 {
   if(ptr->top==-1)
   {
-    cout<<"stack is empty"<<endl;
     return 1;
   }
   else{
@@ -42,13 +41,31 @@ void push(struct node *ptr, int data)
     }
 }
 
+void popped(struct node *ptr)
+{
+    if(isEmpty(ptr))
+    {
+        cout<<"stack underflow can't pop"<<endl;
+    }
+    else{
+        cout<<ptr->arr[ptr->top]<<" data popped"<<endl;
+        ptr->top--;
+    }
+
+}
+
 int main(){
   struct node *s=(struct node*)malloc(sizeof(struct node));
   s->size=3;
   s->top=-1;
   s->arr=(int *)malloc(s->size*sizeof(int));
   push(s,10);
-    push(s,20);
-      push(s,30);
-        push(s,40);
+  push(s,20);
+  push(s,30);
+  push(s,40);
+  popped(s);
+  popped(s);
+  popped(s);
+  popped(s);
+  return 0;
 }
