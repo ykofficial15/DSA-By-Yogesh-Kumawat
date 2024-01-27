@@ -5,41 +5,27 @@ struct node{
   int *arr;
   int top;
 };
-
-void isFull(struct node *ptr)
+void isEmpty(struct node *ptr)
 {
-  if(ptr->top==ptr->size)
+  if(ptr->top==-1)
   {
-    cout<<"stack is full"<<endl;
-  }
-  else{
     cout<<"stack is empty"<<endl;
   }
 }
-
-struct node *insertion(struct node *ptr, int val)
+void isFull(struct node *ptr)
 {
-  ptr->top++;
-  ptr->arr[ptr->top]=val;
-  return ptr;
-}
-
-void traversal(struct node *ptr)
-{
-  for(int i=0;i<=ptr->top;i++)
+  if(ptr->top==ptr->size-1)
   {
-  cout<<ptr->arr[i]<<" ";
+    cout<<"stack is full"<<endl;
   }
 }
+
 int main(){
-    struct node *s=new node;
-    s->top=-1;
-    s->size=10;
-    s->arr=(int *)malloc(s->size*sizeof(int));
-    s=insertion(s,10);
-    s=insertion(s,20);
-    traversal(s);
+  struct node *s=(struct node*)malloc(sizeof(struct node));
+  s->size=4;
+  s->top=-1;
+  s->arr=(int *)malloc(s->size*sizeof(int));
+  isEmpty(s);
+  isFull(s);
   return 0;
 }
-
-// today i am having fever so i am just commiting nothing
