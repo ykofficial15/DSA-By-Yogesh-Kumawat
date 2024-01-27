@@ -5,6 +5,7 @@ struct node{
   int *arr;
   int top;
 };
+
 int isEmpty(struct node *ptr)
 {
   if(ptr->top==-1)
@@ -16,11 +17,11 @@ int isEmpty(struct node *ptr)
     return 0;
   }
 }
+
 int isFull(struct node *ptr)
 {
   if(ptr->top==ptr->size-1)
   {
-    cout<<"stack is full"<<endl;
     return 1;
   }
   else{
@@ -28,26 +29,26 @@ int isFull(struct node *ptr)
   }
 }
 
-void traversal(struct node *ptr)
+void push(struct node *ptr, int data)
 {
-    while(ptr->top!=-1)
+    if(isFull(ptr))
     {
-        cout<<ptr->arr[ptr->top]<<" ";
-        ptr->top--;
+        cout<<"stack is overflow can't push"<<endl;
+    }
+    else{
+        ptr->top++;
+        ptr->arr[ptr->top]=data;
+        cout<<ptr->arr[ptr->top]<<" data pushed "<<endl;
     }
 }
 
 int main(){
   struct node *s=(struct node*)malloc(sizeof(struct node));
-  s->size=2;
+  s->size=3;
   s->top=-1;
   s->arr=(int *)malloc(s->size*sizeof(int));
-  s->top++;
-  s->arr[s->top]=10;
-    s->top++;
-  s->arr[s->top]=20;
-    s->top++;
-  s->arr[s->top]=30;
-  traversal(s);
-  return 0;
+  push(s,10);
+    push(s,20);
+      push(s,30);
+        push(s,40);
 }
