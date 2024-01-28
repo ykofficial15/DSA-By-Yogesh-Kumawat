@@ -43,3 +43,5 @@ int main(){
        cout<<"Linkedlist after reverse"<<endl;
     traverse(head);
 }
+
+// prev  current nextNode 
