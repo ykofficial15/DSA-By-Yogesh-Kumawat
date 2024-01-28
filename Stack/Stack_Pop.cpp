@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 struct node{
   int size;
   int *arr;
@@ -51,7 +52,6 @@ void popped(struct node *ptr)
         cout<<ptr->arr[ptr->top]<<" data popped"<<endl;
         ptr->top--;
     }
-
 }
 
 int main(){

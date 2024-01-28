@@ -28,4 +28,5 @@ int main(){
   isEmpty(s);
   isFull(s);
   return 0;
+  
 }
