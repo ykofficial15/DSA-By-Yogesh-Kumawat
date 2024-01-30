@@ -12,7 +12,9 @@ void traverse(struct node *ptr)
     {
         traverse(ptr->left);
         cout<<ptr->data<<" ";
-        traverse(ptr->right);
+        traverse(ptr->right);                           //this is inorder traversal 
+        // if you wants to perform pre-order traversal then cut and paste the ptr->data LOC before ptr->left
+           // if you wants to perform post-order traversal then cut and paste the ptr->data LOC after ptr->right
     }
 }
 
