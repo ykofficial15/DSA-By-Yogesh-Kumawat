@@ -46,7 +46,11 @@ int main(){
     fourth->data=50;
 
     traverse(root);
-
+   delete root;
+    delete first;
+    delete second;
+    delete third;
+    delete fourth;
     return 0;
 }
 
