@@ -29,7 +29,7 @@ public:
     }
 
 
-    void preorder() {
+    void preorder() {                                              // I have use preorder traversal for faster searching
         cout << data << " ";
         if (left != NULL) {
             left->preorder();
@@ -74,6 +74,5 @@ int main() {
     else{
         cout<<"Node is not present in the tree";
     }
-
     return 0;
 }
